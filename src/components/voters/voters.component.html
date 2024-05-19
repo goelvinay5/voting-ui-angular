@@ -1,0 +1,13 @@
+<p>Voters</p>  
+  <div class="container-fluid" style="white-space: pre">
+    <table>
+      <tr *ngIf="requestFinished === true && requestValid === true">
+        <th>Voter Name</th>
+        <th>Has Voted/th>
+      </tr>
+      <tr *ngfor="let voter of voter">
+        <td>{{ voter.name }}</td>
+        <td>{{ voter.hasvoted }}</td>
+      </tr>
+    </table>
+  </div>
